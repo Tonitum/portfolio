@@ -18,14 +18,10 @@ td {
     border-collapse: collapse;
 }
 
-td:hover {
-    background-color: rgba(255,255,255,.1);
-    z-index: -1;
-}
 
-td > a {
-  color: inherit;
-  text-decoration: inherit;
+td>a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 
@@ -33,6 +29,16 @@ td > a {
     text-transform: uppercase;
     text-decoration: none;
     color: whitesmoke;
+}
+
+.quicklink-entry {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.quicklink-entry:hover {
+    background-color: rgba(255, 255, 255, .1);
+    z-index: -1;
 }
 
 .logo {
@@ -44,3 +50,17 @@ td > a {
     transform: translate(-50%, -50%);
     z-index: -1000;
 }
+
+.about {
+    margin: auto;
+    width: 40%;
+}
+
+.project-entry {
+    border: 1px solid white;
+    margin: auto;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 40%;
+}
+

@@ -1,0 +1,19 @@
+services:
+  tonitum:
+    container_name: tonitum
+    image: tonitum.com:latest
+    restart: always
+    volumes:
+      - ./site:/usr/share/nginx/html
+
+  proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: npm
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '81:81' # the admin UI
+    volumes:
+      - ./npm_data:/data
+      - ./npm_letsencrypt:/etc/letsencrypt
