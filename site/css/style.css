@@ -6,6 +6,11 @@ body {
     text-align: center;
 }
 
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
 .quicklinks {
     border: none;
     border-collapse: collapse;
@@ -41,7 +46,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1000;
-    opacity: 0.4;
+    opacity: 0.3;
     mask-image: radial-gradient(circle, black 30%, transparent 70%);
     -webkit-mask-image: radial-gradient(circle, black 30%, transparent 70%);
 }
@@ -52,7 +57,7 @@ body {
 }
 
 .project-header {
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -63,11 +68,45 @@ body {
     border-spacing: 0 50px;
     margin-left: auto;
     margin-right: auto;
+    width: 40%;
 }
 
 .project-entry {
     border-bottom: 1px solid white;
     padding-bottom: 10px;
-    width: 40%;
     text-align: center;
+}
+
+.project-title {
+    color: whitesmoke;
+}
+
+.project-title>a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.project-description {
+    padding-bottom: 10px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project-link {
+    color: whitesmoke;
+}
+
+.project-link>a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.spacer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px solid white;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }

@@ -3,13 +3,16 @@
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <title>portfolio</title>
-    <link rel="icon" href="./images/logo.jpeg">
+    <link rel="icon" href="./images/favicon.png">
 
 </head>
 
 <body>
+    <div class="logo">
+        <img src="./images/logo.webp">
+    </div>
     <div>
-        <h1> tonitum </h1>
+        <h1 class="title"> tonitum </h1>
         <table class="quicklinks">
             <tr>
                 <td class="quicklink-entry"><a href="https://www.github.com/Tonitum" target="_blank">github</a></td>
@@ -19,18 +22,16 @@
             </tr>
         </table>
     </div>
-    <div class="logo">
-        <img src="./images/logo.jpeg">
-    </div>
-
     <div class="about">
         <h1>
             About Me
         </h1>
-        <p>
-            I am a Principal Cloud DevOps Engineer, a dog dad to 2 black labs, married to the most beautiful woman in
-            the world and aspiring father.
+        <p align="left">
+            I am a Principal Cloud DevOps Engineer, a dog dad to 2 black labs and married to the most beautiful woman in
+            the world.
         </p>
+    </div>
+    <div class="spacer">
     </div>
 
     <div id="projects">
@@ -40,29 +41,58 @@
         <table class="project-list">
             <tr class="project-entry">
                 <td class="project-entry">
-                    <h2> Portfolio </h2>
-                    <p> Work in Progress </p>
+                    <h2 class="project-title"><a href="https://github.com/Tonitum/portfolio" target="_blank">Portfolio
+                            Website</a>
+                    </h2>
+                    <p class="project-description">
+                        This website itself is an exercise in learning and flexing my software engineering capabilities.
+                    </p>
                 </td>
             </tr>
             <tr class="project-entry">
                 <td class="project-entry">
-                    <h2> URL Shortener </h2>
-                    <p> Work in Progress </p>
+                    <h2 class="project-title"><a href="https://github.com/Tonitum/bolt" target="_blank">bolt.tonitum</a>
+                    </h2>
+                    <p class="project-description">
+                        A perma-link service in the vein of Bit.ly, this project showcases fundamental system design
+                        knowledge such as:<br>
+                        - Horizontal Scaling<br>
+                        - Optimization for higher volume of reads vs. writes<br>
+                        - Consistent Hashing and hashing algorithms<br>
+                        <br>
+                    </p>
                 </td>
             </tr>
             <tr class="project-entry">
                 <td class="project-entry">
-                    <h2> AsyncAPI -> Mermaid Generator</h2>
-                    <p> Work in Progress </p>
+                    <h2 class="project-title"> <a href="https://github.com/Tonitum/asyncapi-generator-mermaid"
+                            target="_blank">AsyncAPI
+                            -> Mermaid Generator</a></h2>
+                    <p class="project-description">
+                        A plugin to the AsyncAPI generation ecosystem which takes an AsyncAPI specification and
+                        generates a Mermaid flow chart depicting the connections between services and directionality of
+                        those connections. Intended for use as a tool to automate documentation upkeep.
+                    </p>
                 </td>
             </tr>
             <tr class="project-entry">
                 <td class="project-entry">
-                    <h2> Telekasten Contributor </h2>
-                    <p> Work in Progress </p>
+                    <h2 class="project-title"><a href="https://github.com/nvim-telekasten/telekasten.nvim"
+                            target="_blank">Telekasten Contributor</a></h2>
+                    <p class="project-description">
+                        As an avid user of NeoVim, there have been a few plugins that have not quite met my needs. As
+                        such, I have endeavored to add to them so they do!
+                    </p>
                 </td>
             </tr>
         </table>
+    </div>
+
+    <div id="blog">
+        <h1 class="project-header">
+            Blog
+        </h1>
+        <p> Coming soon! </p>
     </div>
 
 </body>
